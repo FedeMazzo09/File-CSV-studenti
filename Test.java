@@ -6,14 +6,16 @@ public class Test {
         try {
             g.leggiFile();
 
-            g.visualizzaTreCampi(0, 1, 2);
+            g.visualizzaCampi();
 
-            Record r = g.ricercaPerCampoChiave("A538641", 0);
+            Record r = g.ricercaPerCampoChiave("ABB", 2);
             if (r != null) {
                 System.out.println("Record trovato");
+            } else {
+                System.out.println("Record non trovato");
             }
 
-            String[] nuovo = {"A666999", "CONFISCATE", "20/03/2009", "MELEYS"};
+            String[] nuovo = {"Brahim", "Saada", "ABB", "Trentino"};
 
             g.aggiungiRecord(nuovo);
 

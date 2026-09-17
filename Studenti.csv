@@ -1,9 +1,9 @@
-"Nome","Cognome","Azienda","Vacanze"
-"Federico","Mazzoleni","OTG informatica","Riccione, Toscana"
-"Davide","Paternò","ABB","Mare"
-"Ilario","Suardi","Project informatica","Napoli"
-"Deyae","Bellafkih","EXA italia","Salento"
-"Giacomo","Rota","Tekno Body","Brasile"
-"Yassin","Ouldib","","Marocco"
-"Zakaria","Elhaiki","Project informatica","Marocco, Riccione"
-"Daouda","Ndaw","Project informatica","Lecco"
+Nome,Cognome,Azienda,Vacanze
+Federico,Mazzoleni,OTG informatica,Riccione, Toscana
+Davide,Paternò,ABB,Mare
+Ilario,Suardi,Project informatica,Napoli
+Deyae,Bellafkih,EXA italia,Salento
+Giacomo,Rota,Tekno Body,Brasile
+Yassin,Ouldib,,Marocco
+Zakaria,Elhaiki,Project informatica,Marocco, Riccione
+Daouda,Ndaw,Project informatica,Lecco

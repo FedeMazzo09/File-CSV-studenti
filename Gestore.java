@@ -12,14 +12,6 @@ public class Gestore {
         counter = 0;
     }
 
-    public int getCounter() {
-        return counter;
-    }
-
-    public Record getRecord(int index) {
-        return records[index];
-    }
-
     public void leggiFile() throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(nomeFile));
         String riga;
@@ -42,11 +34,10 @@ public class Gestore {
         }
     }
 
-    public void visualizzaTreCampi(int i1, int i2, int i3) {
+    public void visualizzaCampi() {
         for (int i = 0; i < counter; i++) {
             if (!records[i].isCancellato()) {
-                String[] c = records[i].getCampi();
-                System.out.println(c[i1] + " | " + c[i2] + " | " + c[i3]);
+                System.out.println(records[i]);
             }
         }
     }
