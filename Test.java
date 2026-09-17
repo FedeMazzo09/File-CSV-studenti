@@ -1,0 +1,28 @@
+public class Test {
+    public static void main(String[] args) {
+
+        Gestore g = new Gestore("Studenti.csv", 200);
+
+        try {
+            g.leggiFile();
+
+            g.visualizzaTreCampi(0, 1, 2);
+
+            Record r = g.ricercaPerCampoChiave("A538641", 0);
+            if (r != null) {
+                System.out.println("Record trovato");
+            }
+
+            String[] nuovo = {"A666999", "CONFISCATE", "20/03/2009", "MELEYS"};
+
+            g.aggiungiRecord(nuovo);
+
+            System.out.println("Operazioni completate");
+
+            g.scriviFile("Mazzoleni_copia.csv");
+            System.out.println("File Studenti_copia.csv creato con le modifiche");
+        } catch (Exception e) {
+            System.out.println("Errore");
+        }
+    }
+}
